@@ -45,7 +45,7 @@ nav ul li{
     background-image: url('songs.jpg');
 }
 .bottom{
-    position: static;
+    /* position: static; */
     height: 130px;
     color: white;
     background-color: black;
@@ -99,4 +99,25 @@ cursor: pointer;
 .songInfo img{
     opacity: 0;
     transition: opacity 0.4s ease-in;
+}
+@media screen and (max-width:1000px){
+    body{
+        background-color: brown;
+    }
+    .songInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 10px;
+    }
+    .icons{
+        margin-left: 280px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .songItem{
+        font-size: small;
+    }
 }
